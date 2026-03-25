@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #000;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: normal;
+            margin-bottom: 10px;
+            transform: rotate(-2deg);
+        }
+
+        .subtitle {
+            font-size: 0.9em;
+            font-style: italic;
+            transform: rotate(1deg);
+            display: inline-block;
+        }
+
+        .about-me {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid #000;
+            transform: rotate(-1deg);
+            max-width: 600px;
+        }
+
+        .about-me h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            transform: rotate(2deg);
+            display: inline-block;
+        }
+
+        .about-me p {
+            font-size: 0.95em;
+            line-height: 1.8;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            position: relative;
+        }
+
+        .project {
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 25px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+        }
+
+        .project h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .project p {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .project:nth-child(1) {
+            transform: rotate(-3deg);
+        }
+
+        .project:nth-child(2) {
+            transform: rotate(2deg);
+        }
+
+        .project:nth-child(3) {
+            transform: rotate(-2deg);
+        }
+
+        .project:nth-child(4) {
+            transform: rotate(3deg);
+        }
+
+        .project:nth-child(5) {
+            transform: rotate(-1deg);
+        }
+
+        .project:nth-child(6) {
+            transform: rotate(2deg);
+        }
+
+        .project-label {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 3px 8px;
+            font-size: 0.7em;
+            margin-top: 10px;
+            width: fit-content;
+        }
+
+        footer {
+            margin-top: 80px;
+            font-size: 0.85em;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <p class="subtitle">creative work & experiments</p>
+    </header>
+
+    <section class="about-me">
+        <h2>about me</h2>
+        <p>
+            I'm a creative technologist exploring the intersection of art, design, and digital media. 
+            Through various projects, I experiment with different forms of expression—from visual design 
+            to algorithmic art, 3D modeling, and web-based experiences. This portfolio showcases some of 
+            my recent work and ongoing explorations in digital creativity.
+        </p>
+    </section>
+
+    <section class="projects-container">
+        <div class="project">
+            <div>
+                <h3>logo</h3>
+                <p>Brand identity and logo design work. Exploring simplicity and recognizability through minimal forms.</p>
+            </div>
+            <span class="project-label">design</span>
+        </div>
+
+        <div class="project">
+            <div>
+                <h3>glitch art</h3>
+                <p>Digital aesthetics exploring errors and corruption. Intentional glitches as a form of artistic expression.</p>
+            </div>
+            <span class="project-label">digital art</span>
+        </div>
+
+        <div class="project">
+            <div>
+                <h3>meme</h3>
+                <p>Experimental meme creation and internet culture commentary. Humor through visual manipulation.</p>
+            </div>
+            <span class="project-label">humor</span>
+        </div>
+
+        <div class="project">
+            <div>
+                <h3>3d models</h3>
+                <p>3D modeling and rendering projects. Exploring form, space, and digital sculpture.</p>
+            </div>
+            <span class="project-label">3d</span>
+        </div>
+
+        <div class="project">
+            <div>
+                <h3>virtual space</h3>
+                <p>Immersive environments and spatial design. Building interactive digital worlds and experiences.</p>
+            </div>
+            <span class="project-label">experience</span>
+        </div>
+
+        <div class="project">
+            <div>
+                <h3>net.art</h3>
+                <p>Web-based art and internet as medium. Exploring the web as a canvas for creative expression.</p>
+            </div>
+            <span class="project-label">web art</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Portfolio. All work is mine.</p>
+    </footer>
+</body>
+</html>
